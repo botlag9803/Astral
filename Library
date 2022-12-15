@@ -5,7 +5,7 @@ local library = {
 }
 
 -- Services main
-local players = Players
+local players = game.Players
 local uis = game:GetService("UserInputService")
 local runservice = game:GetService("RunService")
 local tweenservice = game:GetService("TweenService")
