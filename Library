@@ -5,7 +5,7 @@ local library = {
 }
 
 -- Services main
-local players = game:GetService("Players")
+local players = Players
 local uis = game:GetService("UserInputService")
 local runservice = game:GetService("RunService")
 local tweenservice = game:GetService("TweenService")
@@ -3635,15 +3635,15 @@ function library:CreateWindow(name, size, hidebutton)
                 end
             end
 
-            for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+            for i,v in pairs(Players:GetPlayers()) do
                 list:AddPlayer(v)
             end
             
-            game:GetService("Players").PlayerAdded:Connect(function(v)
+            Players.PlayerAdded:Connect(function(v)
                 list:AddPlayer(v)
             end)
 
-            game:GetService("Players").PlayerRemoving:Connect(function(v)
+            Players.PlayerRemoving:Connect(function(v)
                 list:RemovePlayer(v)
             end)
             
