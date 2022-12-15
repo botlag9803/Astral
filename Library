@@ -23,7 +23,7 @@ library.theme = {
     titlesize = 18,
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
-    tilesize = 70,
+    tilesize = 80,
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     tabstextcolor = Color3.fromRGB(255, 255, 255),
@@ -3533,7 +3533,7 @@ function library:CreateWindow(name, size, hidebutton)
             local list = { }
             list.name = name or " "
 
-            list.Main = Instance.new("Frame", sector.Main) 
+            list.Main = Instance.new("Frame", window.Main) 
             list.Main.Name = list.name:gsub(" ", "") .. "Sector"
             list.Main.BorderColor3 = window.theme.outlinecolor
             list.Main.ZIndex = 2
