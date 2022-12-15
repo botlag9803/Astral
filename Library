@@ -64,10 +64,12 @@ if library.theme.cursor and Drawing then
         
         game:GetService("RunService").RenderStepped:Connect(function()
             uis.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.ForceHide
-            library.cursor.Visible = uis.MouseEnabled and (uis.MouseIconEnabled and game:GetService("GuiService").MenuIsOpen)
+            library.cursor.Visible = uis.MouseEnabled or game:GetService("GuiService").MenuIsOpen
+            uis.MouseIconEnabled = false
         end)
     elseif not success and library.cursor then
         library.cursor:Remove()
+        uis.MouseIconEnabled = true
     end
 end
 
