@@ -3653,13 +3653,7 @@ function library:CreateWindow(name, size, hidebutton)
         table.insert(window.Tabs, tab)
         return tab
     end
-    
-    -- Window Functions --
-    
-    function CheatLoader:Unload()
-    game:GetService("CoreGui"):FindFirstChild("Astral Loader"):Destroy()
-    end
-
+   
     return window
 end
 
