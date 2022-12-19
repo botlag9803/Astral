@@ -20,15 +20,15 @@ local camera = game.Workspace.CurrentCamera
 
 library.theme = {
     fontsize = 15,
-    titlesize = 18,
+    titlesize = 16,
     font = Enum.Font.Code,
-    background = "rbxassetid://5553946656",
+    background = "",
     tilesize = 80,
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     tabstextcolor = Color3.fromRGB(255, 255, 255),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    backgroundcolor = Color3.fromRGB(25, 25, 25),
+    backgroundcolor = Color3.fromRGB(30, 30, 30),
     accentcolor = Color3.fromRGB(123,104,238),
     accentcolor2 = Color3.fromRGB(72,61,139),
     outlinecolor = Color3.fromRGB(50, 50, 50),
@@ -36,8 +36,8 @@ library.theme = {
     sectorcolor = Color3.fromRGB(30, 30, 30),
     toptextcolor = Color3.fromRGB(255, 255, 255),
     topheight = 48,
-    topcolor = Color3.fromRGB(30, 30, 30),
-    topcolor2 = Color3.fromRGB(30, 30, 30),
+    topcolor = Color3.fromRGB(40, 40, 40),
+    topcolor2 = Color3.fromRGB(25, 25, 25),
     buttoncolor = Color3.fromRGB(50, 50, 50),
     buttoncolor2 = Color3.fromRGB(40, 40, 40),
     itemscolor = Color3.fromRGB(200, 200, 200),
@@ -3653,7 +3653,7 @@ function library:CreateWindow(name, size, hidebutton)
         table.insert(window.Tabs, tab)
         return tab
     end
-   
+    
     return window
 end
 
