@@ -3653,12 +3653,14 @@ function library:CreateWindow(name, size, hidebutton)
         table.insert(window.Tabs, tab)
         return tab
     end
+    
+    -- Window Functions --
+    
+    function window:Unload()
+    game:GetService("CoreGui"):FindFirstChild("astral.pub"):Destroy()
+    end
 
     return window
-end
-
-function window:Unload()
-    game:GetService("CoreGui"):FindFirstChild("astral.pub"):Destroy()
 end
 
 return library
