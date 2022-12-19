@@ -29,8 +29,8 @@ library.theme = {
     tabstextcolor = Color3.fromRGB(255, 255, 255),
     bordercolor = Color3.fromRGB(60, 60, 60),
     backgroundcolor = Color3.fromRGB(30, 30, 30),
-    accentcolor = Color3.fromRGB(123,104,238),
-    accentcolor2 = Color3.fromRGB(72,61,139),
+    accentcolor = Color3.fromRGB(87,53,174),
+    accentcolor2 = Color3.fromRGB(138,43,226),
     outlinecolor = Color3.fromRGB(50, 50, 50),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -3653,7 +3653,7 @@ function library:CreateWindow(name, size, hidebutton)
         table.insert(window.Tabs, tab)
         return tab
     end
-    
+
     return window
 end
 
