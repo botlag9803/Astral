@@ -29,8 +29,8 @@ library.theme = {
     tabstextcolor = Color3.fromRGB(255, 255, 255),
     bordercolor = Color3.fromRGB(60, 60, 60),
     backgroundcolor = Color3.fromRGB(30, 30, 30),
-    accentcolor = Color3.fromRGB(255,0,0),
-    accentcolor2 = Color3.fromRGB(100,0,0),
+    accentcolor = Color3.fromRGB(200,0,0),
+    accentcolor2 = Color3.fromRGB(150,0,0),
     outlinecolor = Color3.fromRGB(50, 50, 50),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -3409,7 +3409,7 @@ function library:CreateWindow(name, size, hidebutton)
 
             configSystem.sector = tab:CreateSector("Configs List", side or "left")
 
-            local ConfigName = configSystem.sector:AddTextbox("Config Name", "", ConfigName, function() end, "")
+            local ConfigName = configSystem.sector:AddTextbox("Name", "", ConfigName, function() end, "")
             local default = tostring(listfiles(configSystem.configFolder)[1] or ""):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", "")
             local Config = configSystem.sector:AddDropdown("Configs", {}, default, false, function() end, "")
             for i,v in pairs(listfiles(configSystem.configFolder)) do
